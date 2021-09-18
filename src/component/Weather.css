@@ -1,0 +1,123 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+.main-container{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.city-search input{
+    border: none;
+    outline: none;
+    border-radius: 2px 0 0 2px;
+    padding: 0.3rem;
+}
+
+.search-btn{
+    border: none;
+    outline: none;
+    border-radius: 0 2px 2px 0;
+    padding: 0.3rem;
+}
+
+.weather-card {
+    width: 40%;
+    height: 45vh;
+    display: flex;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.weather-icon{
+    width: 100%;
+    height: 15vh;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon i{
+    font-size: 50px;
+}
+
+
+/* weather info */
+
+.weather-info{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+.temp{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp h1{
+    font-size: 40px;
+}
+
+.weather-description{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-description h1{
+
+}
+
+.time-date{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--natural-color);
+}
+
+.time-date h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* more info */
+
+.more-info{
+    width: 100%;
+    height: 15vh;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.other-info{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-info p i{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.extra-info{
+    text-align: center;
+}

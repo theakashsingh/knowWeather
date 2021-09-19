@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Weather.css";
 import WeatherCard from "./WeatherCard";
+require('dotenv').config()
+
 
 const Weather = () => {
 
@@ -19,7 +21,8 @@ const Weather = () => {
 
     const getWeatherInfo = async () =>{
       try {
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=42f72b8ab373255446c5c7ac1ad9f25c`;
+        const api_key = process.env.REACT_APP_API_KEY;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=${api_key}`;
 
         let res = await fetch(url);
         let data = await res.json();
